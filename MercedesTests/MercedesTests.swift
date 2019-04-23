@@ -1,10 +1,4 @@
-//
-//  MercedesTests.swift
-//  MercedesTests
-//
-//  Created by Kiprop Korir on 22/04/2019.
-//  Copyright © 2019 Kiprop Korir. All rights reserved.
-//
+
 
 import XCTest
 @testable import Mercedes

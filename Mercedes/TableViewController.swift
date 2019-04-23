@@ -1,10 +1,4 @@
-//
-//  TableViewController.swift
-//  Mercedes
-//
-//  Created by Kiprop Korir on 22/04/2019.
-//  Copyright © 2019 Kiprop Korir. All rights reserved.
-//
+
 
 import UIKit
 import FirebaseCore
@@ -52,10 +46,10 @@ class TableViewController: UITableViewController {
             
             for snap in snapshot.documents {
              
-                if let dealership = Dealership(name: snap.data()["name"] as! String, location: snap.data()["location"] as! String, opening_times: snap.data()["opening_times"] as! String, image_url: snap.data()["image_url"] as! String, maps_link: snap.data()["maps_link"] as! String, phone: snap.data()["phone"] as! String, id: snap.data()["name"] as! String){
+                let dealership = Dealership(name: snap.data()["name"] as! String, location: snap.data()["location"] as! String, opening_times: snap.data()["opening_times"] as! String, image_url: snap.data()["image_url"] as! String, maps_link: snap.data()["maps_link"] as! String, phone: snap.data()["phone"] as! String, id: snap.data()["name"] as! String)
                 self.dealerships.append(dealership)
                 }
-            }
+            
             
             //self.dealerships = results
             self.documents = snapshot.documents
@@ -97,3 +91,4 @@ class TableViewController: UITableViewController {
 
 
 }
+
